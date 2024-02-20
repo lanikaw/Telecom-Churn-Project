@@ -29,3 +29,5 @@ Next, I looked into how much it cost the company to lose these customers. They l
   
 <img width="293" alt="image" src="https://github.com/lanikaw/Telecom-Churn-Project/assets/160637642/3914232c-1b06-4a85-a375-5ccbd9c61c76">
 
+
+
