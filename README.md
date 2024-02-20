@@ -18,9 +18,14 @@ Next, I dived into the data to answer the question, why are customer's leaving t
 8. Which features and services are most profitable?
 9. What can the company do to retain their customers?
 
-1. First, I checked for the total number of customers. There are 7043.
-2. Then, I looked into how many customers churned. There are 1869.
-3. Next, I looked into how much it cost the company to lose these customers. They lost 17% of their revenue to those churned customers.
+
+## Analysis 
+
+First, I checked for the total number of customers. There are 7043.
+
+Then, I looked into how many customers churned. There are 1869.
+
+Next, I looked into how much it cost the company to lose these customers. They lost 17% of their revenue to those churned customers.
   
 <img width="293" alt="image" src="https://github.com/lanikaw/Telecom-Churn-Project/assets/160637642/3914232c-1b06-4a85-a375-5ccbd9c61c76">
 
