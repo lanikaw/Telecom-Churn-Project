@@ -81,7 +81,7 @@ The highest percentage of people left because the competitor had better devices 
 3. The company has lost the largest percentage of its customers to competitors who either had better devices, or made better offers
 4. 77% of churned customers were not provided with premium technical support
 
-## Customer Retention Programs
+## Customer Retention Solutions
 1. Improve devices: One of the top resasons for churn is that competitors had better devices, so the company could evaluate their devices to make sure they are up to standard, and have competitive features.
 2. Loyalty Programs: Tenured customers are less likely to churn than new customers. And the other top reason for churn competitors making better offers, so the company could implement different loyalty programs to retain their new customers. For example, they could incentivize customers to sign up for year long contracts and recieve a discounted rate. They could also reward customers on long-term contracts with free upgrades or additional benefits.
 3. Improve Tech Support: 77% of churners did not recieve premium technical support, so the company could invest in hiring technical support staff ad offering it to all customers.
