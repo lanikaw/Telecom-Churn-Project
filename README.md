@@ -53,7 +53,27 @@ The highest percentage of people left because the competitor had better devices 
 
 <img width="274" alt="image" src="https://github.com/lanikaw/Telecom-Churn-Project/assets/160637642/7f097f2c-944e-466a-9f51-aed2599c5d64">
 
-#No, 77.4% of churned customers did not have premium tech support, this could be a reason why they did not stay. 
+#No, 77% of churned customers did not have premium tech support, this could be a reason why they did not stay. 
+
+**2d. Were churners recieving any promotional offers to incentivize them to keep their service?**
+
+<img width="195" alt="image" src="https://github.com/lanikaw/Telecom-Churn-Project/assets/160637642/25b3b8d9-67ab-4b5c-8387-9bf8e37d7f16">
+
+56% of churners did not receive any promotional offers. 23% received 'Offer E'
+
+**2e. What kind of contract were churned customers on?**
+
+<img width="240" alt="image" src="https://github.com/lanikaw/Telecom-Churn-Project/assets/160637642/cb84b318-bea7-489e-aa3d-e6db3a8ec209">
+
+89% of churners are on month-to-month contracts
+
+**The key drivers of customer churn are:**
+1. 89% of churners are on month-to-month contracts, which means it is probably easier for them to terminate their service without       
+     incurring fees.
+2. 77% of churned customers did not have premium technical support
+3. 56% of churners did not recieve any promotional offers
+
+
 
 
 
