@@ -14,8 +14,6 @@ HAVING count(Customer_ID) > 1
 SELECT COUNT(DISTINCT Customer_ID) AS customer_count
 FROM `gentle-nuance-404020.TelecomChurn.Churn`
 
-#THERE ARE 7043 TOTAL CUSTOMERS
-
 --Count how many customers joined in the last quarter
 
 SELECT COUNT(Customer_Status)
@@ -58,8 +56,6 @@ GROUP BY Age,
 ORDER BY
 Churn_Percentage DESC
 
-#THE HIGHEST PERCENTAGE OF CHURNERS WHERE AGED 51-60.
-
 --What gender were churners?
 
 SELECT
@@ -73,8 +69,6 @@ GROUP BY
 ORDER BY
 Churn_Percentage DESC;
 
-#ALMOST HALF HALF MALE FEMALE
-
 --Do churners have internet service?
 
 SELECT
@@ -84,8 +78,6 @@ FROM `gentle-nuance-404020.TelecomChurn.Churn`
 WHERE Customer_Status = 'Churned'
 GROUP BY Internet_Service
 
-#94% HAVE INTERNET SERVICE
-
 --do churners have phone service?
 
 SELECT
@@ -94,8 +86,6 @@ SELECT
 FROM `gentle-nuance-404020.TelecomChurn.Churn`
 WHERE Customer_Status = 'Churned'
 GROUP BY Phone_Service
-
-#YES, 90.9% HAVE PHONE SERVICE
 
 --What is the churn percentage of customers based on their tenure?
 
