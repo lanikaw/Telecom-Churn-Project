@@ -28,15 +28,12 @@ SELECT COUNT(Customer_Status)
 FROM `gentle-nuance-404020.TelecomChurn.Churn` 
 WHERE Customer_Status='Churned' AND Tenure_in_Months<4
 
-#HOW MUCH REVENUE WAS LOST TO CHURNED CUSTOMERS?
 --How much revenue was lost to churned customers?
 
 SELECT Customer_Status, COUNT(Customer_ID) AS customer_count,
 ROUND((SUM(Total_Revenue) * 100.0) / SUM(SUM(Total_Revenue)) OVER(), 1) AS Revenue_Percentage 
 FROM `gentle-nuance-404020.TelecomChurn.Churn`
 GROUP BY Customer_Status
-
---What is the churn percentage of customers based on their tenure?
 
 --How old were churners?
 SELECT  Age,
@@ -99,7 +96,9 @@ WHERE Customer_Status = 'Churned'
 GROUP BY Phone_Service
 
 #YES, 90.9% HAVE PHONE SERVICE
-  
+
+--What is the churn percentage of customers based on their tenure?
+
 SELECT
   ROUND(COUNT(Customer_ID) * 100.0 / SUM(COUNT(Customer_ID)) OVER(),1) AS Churn_Percentage,
     CASE 
