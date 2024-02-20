@@ -22,7 +22,5 @@ Next, I dived into the data to answer the question, why are customer's leaving t
 2. Then, I looked into how many customers churned. There are 1869.
 3. Next, I looked into how much it cost the company to lose these customers. They lost 17% of their revenue to those churned customers.
   
-Stayed	4720	82.5
-Churned	1869	17.2
-Joined	454	0.3<img width="293" alt="image" src="https://github.com/lanikaw/Telecom-Churn-Project/assets/160637642/3914232c-1b06-4a85-a375-5ccbd9c61c76">
+<img width="293" alt="image" src="https://github.com/lanikaw/Telecom-Churn-Project/assets/160637642/3914232c-1b06-4a85-a375-5ccbd9c61c76">
 
