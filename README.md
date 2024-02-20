@@ -1,6 +1,6 @@
 # Telecom-Churn-Project
 
-In this data exploration, I will be looking at Churn data for a fictional Telecommunications company that provides phone and internet services to 7,043 customers in California, and includes details about customer demographics, location, services, and current status.
+In this data exploration, I will be looking at churn data for a fictional Telecommunications company that provides phone and internet services to 7,043 customers in California, and includes details about customer demographics, location, services, and current status.
 
 I'll be analyzing all relevant customer data to predict behavior to retain customers.
 
