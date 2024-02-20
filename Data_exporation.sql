@@ -109,9 +109,6 @@ CASE
     END
 ORDER BY Churn_Percentage DESC
 
-#MOST OF THE CUSTOMERS (49.1%) LEFT THE COMPANY BEFORE 6 MONTHS. THEY COULD BE FOCUSING ON RETENTION PROGRAMS MARKETED TOWARDS NEW CUSTOMERS, 
-  SUCH AS DISCOUNTED RATES.
-
 --What was the main reason customers left the company?
 
 SELECT 
@@ -121,8 +118,6 @@ FROM `gentle-nuance-404020.TelecomChurn.Churn`
 WHERE Customer_Status = 'Churned'
 GROUP BY Churn_Category
 ORDER BY Churn_Percentage DESC
-
-#45% LEFT FOR A COMPETITOR
 
 --What are the top 5 reasons they left?
 
@@ -136,8 +131,6 @@ GROUP BY Churn_Category, Churn_Reason
 ORDER BY Churn_Percentage DESC
 LIMIT 5
 
-#THE HIGHEST PERCENTAGE OF PEOPLE LEFT BECAUSE THE COMPETITOR HAD BETTER DEVICES OR MADE A BETTER OFFER
-
 --Did the majority of churned customers have premium technical support? 
 
 SELECT 
@@ -148,8 +141,6 @@ FROM `gentle-nuance-404020.TelecomChurn.Churn`
 WHERE Customer_Status = 'Churned'
 GROUP BY Premium_Tech_Support
 ORDER BY Churned DESC
-
-#NO, 77.4% OF CHURNED CUSTOMERS DID NOT HAVE PREMIUM TECH SUPPORT, THIS COULD BE A REASON WHY THEY DID NOT STAY. 
 
 --Were churners recieving any promotional offers to incentivize them to keep their service?
   
@@ -162,8 +153,6 @@ WHERE Customer_Status = 'Churned'
 GROUP BY Offer
 ORDER BY Churned DESC
 
-#56.2 OF CHURNERS DID NOT RECEIVE ANY OFFERS
-  
 --What kind of contract were churned customers on?
   
 SELECT 
@@ -174,7 +163,3 @@ FROM `gentle-nuance-404020.TelecomChurn.Churn`
 WHERE Customer_Status = 'Churned'
 GROUP BY Contract
 ORDER BY Churned DESC
-
-#88.6% OF CHURNERS ARE ON MONTH-TO-MONTH CONTRACTS, WHICH MEANS IT IS EASIER FOR THEM TO TERMINATE THEIR SERVICE.
-  KEY FINDINGS SO FAR: TOP INDICATORS OF CHURN ACCORDING TO THE DATASET: 88.6% OF CHURNERS ARE ON MONTH TO MONTH CONTRACT, 
- 77.4% OF CHURNED CUSTOMERS DID NOT HAVE PREMIUM TECH SUPPORT, AND 56.2% OF CHURNERS DID NOT RECEIVE ANY PROMOTIONAL OFFERS
