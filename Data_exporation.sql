@@ -38,6 +38,68 @@ GROUP BY Customer_Status
 
 --What is the churn percentage of customers based on their tenure?
 
+--How old were churners?
+SELECT  Age,
+    CASE
+        WHEN Age <= 30 THEN '19 - 30 yrs'
+        WHEN Age <= 40 THEN '31 - 40 yrs'
+        WHEN Age <= 50 THEN '41 - 50 yrs'
+        WHEN Age <= 60 THEN '51 - 60 yrs'
+        ELSE  '> 60 yrs'
+    END AS Age_group,
+    ROUND(COUNT(Customer_ID) * 100 / SUM(COUNT(Customer_ID)) OVER(), 1) AS Churn_Percentage
+FROM `gentle-nuance-404020.TelecomChurn.Churn`
+WHERE Customer_Status = 'Churned'
+GROUP BY Age,
+    CASE
+        WHEN Age <= 30 THEN '19 - 30 yrs'
+        WHEN Age <= 40 THEN '31 - 40 yrs'
+        WHEN Age <= 50 THEN '41 - 50 yrs'
+        WHEN Age <= 60 THEN '51 - 60 yrs'
+        ELSE  '> 60 yrs'
+    END
+ORDER BY
+Churn_Percentage DESC
+
+#THE HIGHEST PERCENTAGE OF CHURNERS WHERE AGED 51-60.
+
+--What gender were churners?
+
+SELECT
+    Gender,
+    ROUND(COUNT(Customer_ID) *100.0 / SUM(COUNT(Customer_ID)) OVER(), 1) AS Churn_Percentage
+FROM `gentle-nuance-404020.TelecomChurn.Churn`
+WHERE
+    Customer_Status = 'Churned'
+GROUP BY
+    Gender
+ORDER BY
+Churn_Percentage DESC;
+
+#ALMOST HALF HALF MALE FEMALE
+
+--Do churners have internet service?
+
+SELECT
+    Internet_Service,
+    ROUND(COUNT(Customer_ID) * 100.0 / SUM(COUNT(Customer_ID)) OVER(), 1) AS Churned
+FROM `gentle-nuance-404020.TelecomChurn.Churn`
+WHERE Customer_Status = 'Churned'
+GROUP BY Internet_Service
+
+#94% HAVE INTERNET SERVICE
+
+--do churners have phone service?
+
+SELECT
+    Phone_Service,
+    ROUND(COUNT(Customer_ID) * 100.0 / SUM(COUNT(Customer_ID)) OVER(), 1) AS Churned
+FROM `gentle-nuance-404020.TelecomChurn.Churn`
+WHERE Customer_Status = 'Churned'
+GROUP BY Phone_Service
+
+#YES, 90.9% HAVE PHONE SERVICE
+  
 SELECT
   ROUND(COUNT(Customer_ID) * 100.0 / SUM(COUNT(Customer_ID)) OVER(),1) AS Churn_Percentage,
     CASE 
