@@ -2,8 +2,9 @@
 
 In this data exploration, I will be looking at churn data for a fictional Telecommunications company that provides phone and internet services to 7,043 customers in California, and includes details about customer demographics, location, services, and current status.
 
-I'll be analyzing all relevant customer data to predict behavior and develop focused customer retention programs.
+My job as a data analyst is to deep dive into the relevant customer data to predict behavior and develop focused customer retention programs.
 
+## Process
 **Questions**
 1. How many customers joined the company during the last quarter?
 2. What is the customer profile for a customer that churned, joined, and stayed? Are they different?
